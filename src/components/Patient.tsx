@@ -12,12 +12,12 @@ const PatientInfo = ( ) => {
 
     useEffect(() => {
         const findPatient = async () => {
-            const  pat = await axios.get<Patient>(`http://localhost:3001/api/patients/${id}`)
+            const  pat = await axios.get<Patient>(`https://patientor-backend-xi.vercel.app/api/patients/${id}`)
             if(!pat.data){
                 throw new Error("Patient not found");
             }
             setPatient(pat.data)
-            const diagnosis = await axios.get<Diagnosis[]>('http://localhost:3001/api/diagnoses')
+            const diagnosis = await axios.get<Diagnosis[]>('https://patientor-backend-xi.vercel.app/api/diagnoses')
             if(!diagnosis.data)
             {
                 throw new Error('Error fetching diagnosis');
