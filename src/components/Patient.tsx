@@ -17,7 +17,7 @@ const PatientInfo = ( ) => {
                 throw new Error("Patient not found");
             }
             setPatient(pat.data)
-            const diagnosis = await axios.get<Diagnosis[]>('https://patientor-backend-xi.vercel.app/api/diagnoses')
+            const diagnosis = await axios.get<Diagnosis[]>('https://patientor-backend-xi.vercel.app/api/diagnosis')
             if(!diagnosis.data)
             {
                 throw new Error('Error fetching diagnosis');
