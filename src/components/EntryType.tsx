@@ -303,7 +303,7 @@ const EntryType = ({setter, select, patient, errorSetter, setVisible, visible} :
       </FormControl>
             <br/>
             <br/>
-            <DateField fullWidth label="Discharge Date" value={dischargeDate} onChange={(newValue) => setDate(newValue)} format="MM-DD-YYYY"/>
+            <DateField fullWidth label="Discharge Date" value={dischargeDate} onChange={(newValue) => setDischargeDate(newValue)} format="MM-DD-YYYY"/>
             <br/>
             <br/>
             <TextField value={criteria} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setCriteria(e.target.value)} fullWidth  label="Criteria" variant="standard" aria-label="Criteria"></TextField>

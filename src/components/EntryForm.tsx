@@ -1,4 +1,4 @@
-import { Button, Alert, Select, MenuItem, FormControl, SelectChangeEvent } from "@mui/material"
+import { Button, Alert, Select, MenuItem, FormControl } from "@mui/material"
 import {Patient } from "../types"
 import { useState } from "react"
 import EntryType from "./EntryType"
@@ -14,10 +14,6 @@ const EntryForm = ( {patient, setter} : {patient: Patient, setter: (params: any)
         outlineStyle: "dashed",
         borderWidth: 1,
         marginBottom: 5
-    }
-
-    const handleChange = (event: SelectChangeEvent) => {
-        
     }
 
     return (
